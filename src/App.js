@@ -6,6 +6,7 @@ import FeedbackList from "./components/FeedbackList";
 import FeedbackStats from './components/FeedbackStats';
 import FeedbackForm from './components/FeedbackForm';
 import About from './pages/About';
+import AboutLink from './components/AboutLink';
 
 import FeedbackData from "./data/feedbackData";
 
@@ -29,8 +30,6 @@ function App() {
         <Router>
             <Header />
             <div className="container">
-
-
                 <Routes>
                     <Route path="/"
                         element={
@@ -44,7 +43,7 @@ function App() {
                         } />
                         <Route path='/about' element={<About />} />
                 </Routes>
-
+                <AboutLink />
             </div>
         </Router>
 
